@@ -1,0 +1,28 @@
+{
+  "name": "github-explorer-be",
+  "version": "1.0.0",
+  "description": "An API in Express JS",
+  "main": "src/app.js",
+  "scripts": {
+    "prestart": "docker kill mongodb && docker run -it --rm -p 27017:27017 --name mongodb -d mongo && sleep 2",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmg84/github-explorer-be.git"
+  },
+  "author": "Daniel Molina",
+  "bugs": {
+    "url": "https://github.com/dmg84/github-explorer-be/issues"
+  },
+  "homepage": "https://github.com/dmg84/github-explorer-be#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "custom-env": "^1.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.15",
+    "nocache": "^2.1.0",
+    "cors": "^2.8.5"
+  }
+}
